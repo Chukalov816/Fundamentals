@@ -1,8 +1,7 @@
-function findIndex(arr){
-    let current=['apple', '8']
-    let index=arr.indexOf(current[1])
-    console.log(index);
+numbers=[1,3,5,9,8]
+ for (let i = 0; i < numbers.length; i++) {
+  let second=numbers[i+1] ?numbers[i+1]:0;
+  let sum = numbers[i] + second;
+  numbers.splice(i, 2, sum)
+  console.log(sum);
 }
-
-
-solve(['4', '5','8','10'])

@@ -1,16 +1,18 @@
-function sum(n){
-    let result=0;
-    for (let i = 1; i <=n; i++) {
-       if (n%i==0) {
-           result+=i;
-       }
+
+function odd(n) {
+
+    let oddNumSum = 0;
+    let oddNum = 1;
+    for (i = 1; i <=n; i++) {
         
-    }return result;
+
+
+        oddNumSum += oddNum;
+        console.log(oddNum);
+        oddNum += 2;
+
+    }console.log(`Sum: ${oddNumSum}`);
+
 }
 
-sum(6)
-
-
-
-
-
+odd(5)
